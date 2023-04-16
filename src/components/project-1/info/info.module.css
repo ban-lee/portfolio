@@ -1,0 +1,65 @@
+.info {
+    display: flex;
+    flex-direction: column;
+
+    padding-inline: 35px;
+    margin-bottom: 30px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #FFFFFF;
+  padding-top: 21px;
+}
+
+.profession {
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #F3BF99;
+  padding-top: 6px;
+}
+
+.website {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #F5F5F5;
+  padding-top: 8px;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 17px;
+
+  padding-top: 15px;
+}
+
+.socialButtons a {
+  flex: 1 1;
+}
+
+.socialButtons button {
+  width: 100%;
+}
+
+.socialButtons button > img {
+  height: 16px;
+  width: 16px;
+}
+
+.githubButton {
+  color: #374151;
+}
+
+.linkedInButton {
+  background: #5093E2;
+  color: #ffffff;
+}

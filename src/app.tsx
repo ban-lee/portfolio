@@ -1,33 +1,32 @@
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
+import styles from './app.module.css';
+import { BusinessCard } from './components/project-1/business-card';
+import { Home } from './components/home';
+import { Navigation, Project } from './components/navigation';
 import { useState } from 'react';
-import './App.css';
+
+interface ContentProps {
+  project: Project;
+}
+
+function Content({ project }: ContentProps) {
+  return (
+    <div className={styles.content}>
+      {project === Project.NONE && <Home />}
+      {project === Project.PROJECT1 && <BusinessCard />}
+    </div>
+  );
+}
 
 export function App() {
-  const [count, setCount] = useState(0)
+  const [project, setProject] = useState(Project.NONE);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={styles.app}>
+      <div className={styles.sidebar}>
+        <h1>Scrimba Projects</h1>
+        <Navigation setProject={setProject} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Content project={project} />
     </div>
-  )
+  );
 }
