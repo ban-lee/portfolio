@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+}
+
+.entry {
+  display: flex;
+  gap: 18px;
+}
+
+.info * {
+  color: #2B283A;
+}
+
+.photo {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  margin-top: 8px;
+}
+
+.dates {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 12px;
+
+  margin-top: 14px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 15px;
+
+  margin-top: 9px;
+}

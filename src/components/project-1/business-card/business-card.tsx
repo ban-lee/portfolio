@@ -13,13 +13,11 @@ import { Interests } from '../interests';
  */
 export function BusinessCard() {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
-        <Info />
-        <About />
-        <Interests />
-        <Footer />
-      </div>
+    <div className={styles.card}>
+      <Info />
+      <About />
+      <Interests />
+      <Footer />
     </div>
   );
 }

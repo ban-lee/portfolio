@@ -1,0 +1,26 @@
+.locationInfo {
+  display: flex;
+  place-items: center;
+}
+
+.locationInfo img {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.location {
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin-right: auto;
+  padding-top: 1px;
+}
+
+.link {
+  color: #918E9B;
+  font-size: 11px;
+  line-height: 12px;
+  text-decoration-line: underline;
+}

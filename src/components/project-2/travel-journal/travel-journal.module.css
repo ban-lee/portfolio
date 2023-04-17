@@ -1,0 +1,48 @@
+.journal {
+  width: 550px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #F55A5A;
+  border-radius: 10px 10px 0px 0px;
+  flex: 1 1 auto;
+  height: 55px;
+
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 8px;
+}
+
+.header h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  color: #FFFFFF;
+}
+
+.main {
+  background: #FFFFFF;
+  padding: 45px 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main > div {
+  border-bottom: 1px solid #F5F5F5;
+  padding-block: 18px;
+}
+
+.main > div:first-of-type {
+  padding-top: 0;
+}
+
+.main > div:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}

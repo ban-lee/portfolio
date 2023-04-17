@@ -1,12 +1,5 @@
-.container {
-  display: flex;
-  place-items: center;
-  height: 100vh;
-}
-
 .card {
   background: #1A1B21;
   border-radius: 10px 10px 0px 0px;
-  margin-inline: auto;
   width: 320px;
 }

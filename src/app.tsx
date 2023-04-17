@@ -2,6 +2,7 @@ import styles from './app.module.css';
 import { BusinessCard } from './components/project-1/business-card';
 import { Home } from './components/home';
 import { Navigation, Project } from './components/navigation';
+import { TravelJournal } from './components/project-2/travel-journal';
 import { useState } from 'react';
 
 interface ContentProps {
@@ -13,6 +14,7 @@ function Content({ project }: ContentProps) {
     <div className={styles.content}>
       {project === Project.NONE && <Home />}
       {project === Project.PROJECT1 && <BusinessCard />}
+      {project === Project.PROJECT2 && <TravelJournal />}
     </div>
   );
 }

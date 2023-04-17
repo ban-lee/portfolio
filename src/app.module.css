@@ -23,4 +23,8 @@
   background-color: #23252C;
   flex: 1 1 auto;
   height: 100vh;
+
+  display: flex;
+  place-content: center;
+  place-items: center;
 }
