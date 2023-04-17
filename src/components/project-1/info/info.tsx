@@ -1,6 +1,6 @@
-import gitHubLogo from '/src/assets/project-1/social-github.svg';
-import linkedInLogo from '/src/assets/project-1/social-linkedin.svg';
-import profilePicture from '/src/assets/project-1/profile2.png';
+import gitHubLogo from '@assets/project-1/social-github.svg';
+import linkedInLogo from '@assets/project-1/social-linkedin.svg';
+import profilePicture from '@assets/project-1/profile2.png';
 import styles from './info.module.css';
 
 export function Info() {

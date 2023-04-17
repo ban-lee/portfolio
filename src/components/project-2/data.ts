@@ -19,7 +19,7 @@ export const data: Data[] = [
     startDate: "July 28, 2023",
     endDate: "July 29, 2023",
     description: "We're excited to return to hosting in-person events and to invite our Warriors of Light to celebrate with us in Las Vegas this July!",
-    imageUrl: "/src/assets/project-2/ff14_fanfest.jpg",
+    imageUrl: "/project-2/ff14_fanfest.jpg",
   },
   {
     id: 2,
@@ -29,6 +29,6 @@ export const data: Data[] = [
     startDate: "March 14, 2023",
     endDate: "March 21, 2023",
     description: "The first-ever Sandals all-inclusive resort, Sandals Montego Bay, now has even more ways to enjoy luxury while reveling in the spirit of romance and fun on Jamaica’s coastline.",
-    imageUrl: "/src/assets/project-2/sandals_montego_bay.webp",
+    imageUrl: "/project-2/sandals_montego_bay.webp",
   }
 ]
