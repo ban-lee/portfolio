@@ -1,0 +1,27 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quizFooter {
+  margin-top: 24px;
+
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 24px;
+}
+
+.quizFooter button {
+  background: #4D5B9E;
+}
+
+.quizFooter p {
+  color: #293264;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+}

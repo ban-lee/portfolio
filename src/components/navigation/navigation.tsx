@@ -4,6 +4,7 @@ export enum Project {
   NONE,
   PROJECT1,
   PROJECT2,
+  PROJECT3,
 }
 
 interface ProjectItemProps {
@@ -43,11 +44,15 @@ export function Navigation({ setProject }: NavigationProps) {
             projectName={`Digital Business Card`}
             setProject={() => setProject(Project.PROJECT1)}
           />
-
           <ProjectItem
             projectNum={2}
             projectName={`Travel Journal`}
             setProject={() => setProject(Project.PROJECT2)}
+          />
+          <ProjectItem
+            projectNum={3}
+            projectName={`Quizzical`}
+            setProject={() => setProject(Project.PROJECT3)}
           />
         </div>
       </div>
