@@ -1,5 +1,44 @@
+@import url(/src/variables.css);
+
 .home {
+  color: var(--platinum);
   margin-inline: auto;
   max-width: 1280px;
+  background: var(--night);
+  border-radius: 10px;
+
+  padding-bottom: 36px;
+}
+
+.intro {
+  background:
+    linear-gradient(0deg, rgba(22, 22, 24, 0.70), rgba(22, 22, 24, 0.70)),
+    url(/src/assets/home-background.jpg) no-repeat center;
+  border-radius: 10px 10px 0 0;
+  flex: 0 0 auto;
+  height: 300px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.intro p {
+  margin-top: 16px;
+}
+
+.projects {
+  flex: 1 1 auto;
+  margin-top: 36px;
+  padding: 0 48px;
+
+  display: flex;
+  gap: 48px;
+  place-items: space-between;
+}
+
+.projects > div {
+  max-width: 400px;
 }

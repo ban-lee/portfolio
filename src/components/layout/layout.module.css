@@ -1,0 +1,34 @@
+@import url(/src/variables.css);
+
+.app {
+  background-color: var(--raisin-black);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--auburn);
+  height: var(--header-height);
+  padding-inline: 36px;
+
+  display: flex;
+  place-items: center;
+}
+
+.header a {
+  color: var(--platinum);
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1 1 auto;
+  height: calc(100vh - var(--header-height));
+
+  display: flex;
+  place-content: center;
+  place-items: center;
+}

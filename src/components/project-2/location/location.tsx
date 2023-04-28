@@ -1,4 +1,4 @@
-import locationPinIcon from '@assets/project-2/location-dot-solid.svg';
+import locationPinIcon from '@/assets/project-2/location-dot-solid.svg';
 import styles from './location.module.css';
 
 interface Props {

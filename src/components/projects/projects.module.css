@@ -1,0 +1,55 @@
+@import url(/src/variables.css);
+
+.container {
+  color: var(--platinum);
+  margin-top: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.course {
+  width: 100%;
+}
+
+.courseName {
+  margin-bottom: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tags {
+  margin-top: 8px;
+}
+
+.tags > div {
+  border-radius: 8px;
+  background: var(--navajo-white);
+  color: var(--raisin-black);
+  font-size: small;
+  padding: 0 8px;
+  width: fit-content;
+}
+
+.projects {
+  margin-top: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projects a {
+  color: #EDAE49;
+  padding: 4px 16px;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}

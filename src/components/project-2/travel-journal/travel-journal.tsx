@@ -1,4 +1,4 @@
-import earthIcon from '@assets/project-2/earth-americas-solid.svg';
+import earthIcon from '@/assets/project-2/earth-americas-solid.svg';
 import styles from './travel-journal.module.css';
 import { data } from '../data';
 import { Entry } from '../entry';
