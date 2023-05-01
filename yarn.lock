@@ -1522,6 +1522,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"portfolio@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "portfolio@workspace:."
+  dependencies:
+    "@types/node": ^18.15.11
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    "@vitejs/plugin-react": ^3.1.0
+    nanoid: ^4.0.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router-dom: ^6.10.0
+    typescript: ^4.9.3
+    vite: ^4.2.0
+  languageName: unknown
+  linkType: soft
+
 "postcss@npm:^8.4.21":
   version: 8.4.21
   resolution: "postcss@npm:8.4.21"
@@ -1693,23 +1710,6 @@ __metadata:
   checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
   languageName: node
   linkType: hard
-
-"scrimba@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "scrimba@workspace:."
-  dependencies:
-    "@types/node": ^18.15.11
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@vitejs/plugin-react": ^3.1.0
-    nanoid: ^4.0.2
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router-dom: ^6.10.0
-    typescript: ^4.9.3
-    vite: ^4.2.0
-  languageName: unknown
-  linkType: soft
 
 "semver@npm:^6.3.0":
   version: 6.3.0

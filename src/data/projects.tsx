@@ -6,7 +6,7 @@ export const SCRIMBA: Course[] = [
     id: nanoid(),
     name: 'Learn React',
     description: (
-      <p>An introduction to React course. The projects only utilizes plain React to focus on the basics.</p>
+      <p>An introduction to React.</p>
     ),
     projects: [
       {
@@ -30,6 +30,7 @@ export const SCRIMBA: Course[] = [
     id: nanoid(),
     name: 'Learn React Router 6',
     description: (<p>A deep-dive into the router.</p>),
+    githubUrl: 'https://github.com/ban-lee/scrimba-vanlife',
     inProgress: true,
     projects: [
       {
@@ -46,6 +47,7 @@ export const PERSONAL: Course[] = [
     id: nanoid(),
     name: 'Karlan Tools',
     description: (<p>A website with my Arknights related tools.</p>),
+    githubUrl: 'https://github.com/ban-lee/arknights',
     inProgress: true,
     projects: [
       {
@@ -59,6 +61,7 @@ export const PERSONAL: Course[] = [
     id: nanoid(),
     name: 'Island Sanctuary Planner',
     description: (<p>A small tool for Final Fantasy XIV's Island Sanctuary mode.</p>),
+    githubUrl: 'https://github.com/ban-lee/ffxiv-island-sanctuary',
     projects: [
       {
         id: nanoid(),

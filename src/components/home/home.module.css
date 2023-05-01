@@ -35,10 +35,10 @@
   padding: 0 48px;
 
   display: flex;
-  gap: 48px;
+  gap: 56px;
   place-items: space-between;
 }
 
 .projects > div {
-  max-width: 400px;
+  width: 50%;
 }

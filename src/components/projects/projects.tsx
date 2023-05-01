@@ -11,8 +11,16 @@ export function Projects({ courses }: Props) {
     <div className={styles.container}>
       {courses.map((course) => {
         return (
-          <div key={course.id} className={styles.course}>
-            <h3 className={styles.courseName}>{course.name}</h3>
+          <div key={course.id}>
+            <div className={styles.header}>
+              <h3 className={styles.courseName}>{course.name}</h3>
+
+              {!!course.githubUrl && (
+                <a href={course.githubUrl} className={styles.github}>
+                  <i className="bi bi-github"></i>
+                </a>
+              )}
+            </div>
             <div className={styles.description}>
               {course.description}
             </div>
@@ -24,7 +32,7 @@ export function Projects({ courses }: Props) {
             <div className={styles.projects}>
               {course.projects.map((project) => {
                 return (
-                  <div key={project.id}>
+                  <div key={project.id} className={styles.links}>
                     {!!project.path && (
                       <NavLink key={project.id} to={project.path}>
                         {project.name}

@@ -16,19 +16,60 @@
   place-items: center;
 }
 
-.header a {
+.title {
   color: var(--platinum);
+  margin-right: auto;
 }
 
-.header a:hover {
+.goBack {
+  color: var(--raisin-black);
+  line-height: 20px;
+
+  display: flex;
+  place-content: center;
+}
+
+.goBack i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.title:hover,
+.goBack:hover {
   text-decoration: underline;
 }
 
 .content {
   flex: 1 1 auto;
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height) - var(--footer-height));
 
   display: flex;
   place-content: center;
   place-items: center;
+}
+
+.footer {
+  color: var(--platinum);
+  font-size: small;
+  height: 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  place-content: center;
+  gap: 24px;
+}
+
+.footer a {
+  color: var(--hunyadi-yellow);
+}
+
+.footer a:hover {
+  color: var(--harvest-gold);
+  text-decoration: underline;
 }

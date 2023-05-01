@@ -11,6 +11,7 @@ export interface Course {
   id: string;
   name: string;
   description: React.ReactElement;
+  githubUrl?: string;
   inProgress?: boolean;
 
   projects: Project[];

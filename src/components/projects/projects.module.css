@@ -6,17 +6,28 @@
 
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 44px;
 }
 
-.course {
-  width: 100%;
+.header {
+  margin-bottom: 16px;
+
+  display: flex;
+  place-items: center;
 }
 
 .courseName {
-  margin-bottom: 16px;
+  margin-right: auto;
   text-align: left;
-  width: 100%;
+}
+
+.github {
+  color: var(--hunyadi-yellow);
+  font-size: 24px;
+}
+
+.github:hover {
+  color: var(--harvest-gold);
 }
 
 .description {
@@ -45,11 +56,23 @@
   gap: 16px;
 }
 
+.links {
+  display: flex;
+  gap: 24px;
+  place-content: center;
+}
+
+.links a:first-of-type {
+  flex: 1 1 auto;
+}
+
 .projects a {
-  color: #EDAE49;
+  color: var(--hunyadi-yellow);
+  line-height: 24px;
   padding: 4px 16px;
 }
 
 .projects a:hover {
+  color: var(--harvest-gold);
   text-decoration: underline;
 }
