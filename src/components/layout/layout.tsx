@@ -8,9 +8,15 @@ export function Layout() {
     <>
       <div className={styles.app}>
         <header className={styles.header}>
-          <Link to="/" className={styles.title}>
-            <h2>Ban's Projects</h2>
-          </Link>
+          <div className={styles.headerLeft}>
+            <Link to="/" className={styles.title}>
+              <h2>Ban's Projects</h2>
+            </Link>
+            <div className={styles.links}>
+              <a href="https://www.linkedin.com/in/vanccielee/">LinkedIn</a>
+              <a href="https://github.com/ban-lee">GitHub</a>
+            </div>
+          </div>
           {location.pathname !== '/' && (
             <Link to="/">
               <div className={styles.goBack}>
@@ -23,13 +29,6 @@ export function Layout() {
         <div className={styles.content}>
           <Outlet />
         </div>
-        <footer className={styles.footer}>
-          <p>&#169; Ban Lee</p>
-          <div className={styles.links}>
-            <a href="https://www.linkedin.com/in/vanccielee/">LinkedIn</a>
-            <a href="https://github.com/ban-lee">GitHub</a>
-          </div>
-        </footer>
       </div>
     </>
   );

@@ -25,6 +25,10 @@
   place-items: center;
 }
 
+.intro h1 {
+  font-family: Montserrat, sans-serif;
+}
+
 .intro p {
   margin-top: 16px;
 }
