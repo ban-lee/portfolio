@@ -8,21 +8,22 @@ export const SCRIMBA: Course[] = [
     description: (
       <p>An introduction to React.</p>
     ),
+    githubUrl: 'https://github.com/ban-lee/portfolio/tree/main/src/components/learn-react',
     projects: [
       {
         id: nanoid(),
         name: 'Digital Business Card',
-        path: '/scrimba/project-1',
+        path: '/learn-react/project-1',
       },
       {
         id: nanoid(),
         name: 'Travel Journal',
-        path: '/scrimba/project-2',
+        path: '/learn-react/project-2',
       },
       {
         id: nanoid(),
         name: 'Quizzical',
-        path: '/scrimba/project-3',
+        path: '/learn-react/project-3',
       },
     ],
   },
