@@ -32,12 +32,11 @@ export const SCRIMBA: Course[] = [
     name: 'Learn React Router 6',
     description: (<p>A deep-dive into the router.</p>),
     githubUrl: 'https://github.com/ban-lee/scrimba-vanlife',
-    inProgress: true,
     projects: [
       {
         id: nanoid(),
         name: '#VANLIFE',
-        url: 'https://scrimba-vanlife-mu.vercel.app/',
+        url: 'https://scrimba-vanlife.karlantools.ca/',
       },
     ],
   },
