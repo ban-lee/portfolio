@@ -1,14 +1,7 @@
 import styles from './typing-game.module.css';
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useRef, useState } from 'react';
+import { GameState, useGameState } from '../useGameState';
 import { useEffect } from 'react';
-
-enum GameState {
-  IDLE,
-  RUNNING,
-  STOPPED,
-};
-
-const DEFAULT_TIME = 5;
 
 function countWords(text: string) {
   const words = text.split(' ').filter((word) => word !== '');
@@ -17,9 +10,10 @@ function countWords(text: string) {
 
 export function TypingGame() {
   const [typedText, setTypedText] = useState('');
-  const [gameState, setGameState] = useState(GameState.IDLE);
-  const [timeRemaining, setTimeRemaining] = useState(DEFAULT_TIME);
+  const textareaRef = useRef<HTMLTextAreaElement|null>(null);
   const [score, setScore] = useState(0);
+
+  const {gameState, timeRemaining, startGame} = useGameState();
 
   function handleChange(e: ChangeEvent<HTMLTextAreaElement>) {
     const { value } = e.target;
@@ -27,33 +21,20 @@ export function TypingGame() {
   }
 
   function handleStartGame() {
-    setGameState(GameState.RUNNING);
+    startGame();
     setScore(0);
-    setTimeRemaining(DEFAULT_TIME);
     setTypedText('');
   }
 
-  function stopGame() {
-    setGameState(GameState.STOPPED);
-    setScore(countWords(typedText));
-  }
-
   useEffect(() => {
-    if (gameState === GameState.IDLE || gameState === GameState.STOPPED) return;
-
-    if (timeRemaining <= 0) {
-      stopGame();
-      return;
+    if (gameState === GameState.RUNNING) {
+      textareaRef.current?.focus();
     }
 
-    const timeoutId = setTimeout(() => {
-      setTimeRemaining((time) => time - 1);
-    }, 1000);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [gameState, timeRemaining]);
+    if (gameState === GameState.STOPPED) {
+      setScore(countWords(typedText));
+    }
+  }, [gameState]);
 
   return (
     <main className={styles.container}>
@@ -62,6 +43,7 @@ export function TypingGame() {
       <div className={styles.gameArea}>
         <textarea
           className={styles.textarea}
+          ref={textareaRef}
           name="typedText"
           value={typedText}
           onChange={handleChange}
