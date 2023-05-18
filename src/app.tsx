@@ -4,6 +4,7 @@ import { Home } from './components/home';
 import { Layout } from './components/layout';
 import { Quizzical } from './components/learn-react/project-3/quizzical/quizzical';
 import { TravelJournal } from './components/learn-react/project-2/travel-journal';
+import { TypingGame } from './components/advanced-react/project-1/typing-game';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
           <Route path="learn-react/project-1" element={<BusinessCard />} />
           <Route path="learn-react/project-2" element={<TravelJournal />} />
           <Route path="learn-react/project-3" element={<Quizzical />} />
+          <Route path="advanced-react/project-1" element={<TypingGame />} />
         </Route>
       </Routes>
     </BrowserRouter>
