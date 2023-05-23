@@ -3,9 +3,10 @@
   place-items: center;
 }
 
-.locationInfo img {
-  width: 12px;
-  height: 12px;
+.locationInfo i {
+  color: #F55A5A;
+  font-size: 11px;
+  line-height: 12px;
   margin-right: 5px;
 }
 

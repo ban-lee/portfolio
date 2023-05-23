@@ -1,4 +1,3 @@
-import locationPinIcon from '@/assets/project-2/location-dot-solid.svg';
 import styles from './location.module.css';
 
 interface Props {
@@ -9,10 +8,7 @@ interface Props {
 export function Location({ location, googleMapsUrl }: Props) {
   return (
     <div className={styles.locationInfo}>
-      <img
-        src={locationPinIcon}
-        alt="Location pin icon"
-      />
+      <i className="bi bi-geo-alt-fill"></i>
       <div className={styles.location}>{location}</div>
       <a
         href={googleMapsUrl}

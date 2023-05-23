@@ -1,5 +1,3 @@
-@import url(/src/variables.css);
-
 .container {
   color: var(--platinum);
   margin-top: 24px;
