@@ -43,7 +43,7 @@ export const SCRIMBA: Course[] = [
   {
     id: nanoid(),
     name: 'Advanced React',
-    description: (<p>A deeper look into React, including class and function component styles.</p>),
+    description: (<p>A deeper look into React. Context, hooks, class and function component styles.</p>),
     projects: [
       {
         id: nanoid(),
