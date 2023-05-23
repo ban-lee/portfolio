@@ -8,22 +8,22 @@ export const SCRIMBA: Course[] = [
     description: (
       <p>An introduction to React.</p>
     ),
-    githubUrl: 'https://github.com/ban-lee/portfolio/tree/main/src/components/learn-react',
+    githubUrl: 'https://github.com/ban-lee/portfolio/tree/main/src/projects',
     projects: [
       {
         id: nanoid(),
         name: 'Digital Business Card',
-        path: '/learn-react/project-1',
+        path: '/learn-react-1',
       },
       {
         id: nanoid(),
         name: 'Travel Journal',
-        path: '/learn-react/project-2',
+        path: '/learn-react-2',
       },
       {
         id: nanoid(),
         name: 'Quizzical',
-        path: '/learn-react/project-3',
+        path: '/learn-react-3',
       },
     ],
   },
@@ -43,12 +43,18 @@ export const SCRIMBA: Course[] = [
   {
     id: nanoid(),
     name: 'Advanced React',
-    description: (<p>A deeper look into React. Context, hooks, class and function component styles.</p>),
+    description: (
+      <>
+        <p>A deeper look into React.</p><br />
+        <p>Context, hooks, class and function component styles.</p>
+      </>
+    ),
+    githubUrl: 'https://github.com/ban-lee/portfolio/tree/main/src/projects',
     projects: [
       {
         id: nanoid(),
         name: 'Timed Typing Game',
-        path: '/advanced-react/project-1',
+        path: '/advanced-react-1',
       },
     ],
   },
