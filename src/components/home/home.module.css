@@ -1,5 +1,3 @@
-@import url(/src/variables.css);
-
 .home {
   color: var(--platinum);
   margin-inline: auto;
