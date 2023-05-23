@@ -1,5 +1,3 @@
-import gitHubLogo from '@/assets/project-1/social-github.svg';
-import linkedInLogo from '@/assets/project-1/social-linkedin.svg';
 import profilePicture from '@/assets/project-1/profile2.png';
 import styles from './info.module.css';
 
@@ -26,13 +24,13 @@ export function Info() {
         <div className={styles.socialButtons}>
           <a href="https://github.com/ban-lee" target="_blank" rel="noopener noreferrer">
             <button className={styles.githubButton}>
-              <img src={gitHubLogo} alt="GitHub Logo" />
+              <i className="bi bi-github"></i>
               GitHub
             </button>
           </a>
           <a href="https://www.linkedin.com/in/vanccielee/" target="_blank" rel="noopener noreferrer">
             <button className={styles.linkedInButton}>
-              <img src={linkedInLogo} alt="LinkedIn Logo" />
+              <i className="bi bi-linkedin"></i>
               LinkedIn
             </button>
           </a>

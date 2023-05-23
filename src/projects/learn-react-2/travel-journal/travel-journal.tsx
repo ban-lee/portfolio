@@ -1,4 +1,3 @@
-import earthIcon from '@/assets/project-2/earth-americas-solid.svg';
 import styles from './travel-journal.module.css';
 import { data } from '../data';
 import { Entry } from '../entry';
@@ -15,12 +14,7 @@ export function TravelJournal() {
   return (
     <div className={styles.journal}>
       <header className={styles.header}>
-        <img
-          src={earthIcon}
-          alt="Icon of the world"
-          width={24}
-          height={24}
-        />
+        <i className="bi bi-globe-americas"></i>
         <h2>my travel journal.</h2>
       </header>
       <main className={styles.main}>

@@ -50,9 +50,8 @@
   width: 100%;
 }
 
-.socialButtons button > img {
-  height: 16px;
-  width: 16px;
+.socialButtons button > i {
+  font-size: 16px;
 }
 
 .githubButton {
