@@ -1,0 +1,23 @@
+.header {
+  background: var(--pink);
+  box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
+  height: 50px;
+  padding: 0 16px;
+
+  display: flex;
+  place-items: center;
+}
+
+.title {
+  color: #fff;
+  margin-right: auto;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.cart {
+  color: #fff;
+  font-size: 24px;
+}

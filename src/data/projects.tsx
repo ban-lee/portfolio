@@ -56,6 +56,11 @@ export const SCRIMBA: Course[] = [
         name: 'Timed Typing Game',
         path: '/advanced-react-1',
       },
+      {
+        id: nanoid(),
+        name: 'PicSome',
+        path: '/picsome',
+      },
     ],
   },
 ];

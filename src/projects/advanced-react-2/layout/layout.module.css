@@ -1,0 +1,17 @@
+.container {
+  background: #fff;
+  font-family: 'Oswald', sans-serif;
+  min-height: 500px;
+  margin: 16px 48px;
+  width: 100%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+
+  --black: #150605;
+  --red: #EA453C;
+  --pink: #F47B6E;
+  --light-blue: #EFFBFE;
+  --blue: #5092cf;
+}
