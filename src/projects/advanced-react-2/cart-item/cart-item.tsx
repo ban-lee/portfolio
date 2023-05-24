@@ -2,6 +2,7 @@ import styles from './cart-item.module.css';
 import { Photo } from '../picsome-types';
 import { PicSomeContext } from '../picsome-context';
 import { useContext } from 'react';
+import { useIsHovered } from '../useIsHovered';
 
 interface Props {
   photo: Photo;
@@ -9,6 +10,7 @@ interface Props {
 
 export function CartItem( { photo }: Props) {
   const { removeFromCart } = useContext(PicSomeContext);
+  const [isHovered, ref] = useIsHovered();
 
   return (
     <div className={styles.cartItem}>
@@ -21,9 +23,10 @@ export function CartItem( { photo }: Props) {
         </div>
         <div
           className={styles.trash}
+          ref={ref}
           onClick={() => removeFromCart(photo)}
         >
-          <i className="bi bi-trash"></i>
+          {isHovered ? <i className="bi bi-trash3-fill"></i> : <i className="bi bi-trash3"></i>}
         </div>
       </div>
   );

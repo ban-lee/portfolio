@@ -8,6 +8,7 @@ export interface PicSomeContextType {
   cart: Photo[];
   addToCart: (p: Photo) => void;
   removeFromCart: (p: Photo) => void;
+  clearCart: () => void;
 }
 
 export const PicSomeContext = createContext<PicSomeContextType>({
@@ -17,6 +18,7 @@ export const PicSomeContext = createContext<PicSomeContextType>({
   cart: [],
   addToCart: () => {},
   removeFromCart: () => {},
+  clearCart: () => {},
 });
 
 export function PicSomeProvider({ children } : { children: ReactElement}) {
@@ -43,6 +45,10 @@ export function PicSomeProvider({ children } : { children: ReactElement}) {
     setCart((prevCart) => prevCart.filter((p) => p.id !== photo.id));
   }
 
+  function clearCart() {
+    setCart([]);
+  }
+
   return (
     <PicSomeContext.Provider
       value={{
@@ -51,6 +57,7 @@ export function PicSomeProvider({ children } : { children: ReactElement}) {
         cart,
         addToCart,
         removeFromCart,
+        clearCart,
       }}
     >
       {children}

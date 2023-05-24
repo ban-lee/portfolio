@@ -1,4 +1,4 @@
-import { Cart } from './cart';
+import { action as cartAction, Cart } from './cart';
 import { Layout } from './layout';
 import { loader as photosLoader, Photos } from './photos';
 import { Route } from 'react-router-dom';
@@ -11,7 +11,11 @@ export function PicSomeRoutes() {
           element={<Photos />}
           loader={photosLoader}
         />
-        <Route path="cart" element={<Cart />} />
+        <Route
+          path="cart"
+          element={<Cart />}
+          action={cartAction}
+        />
       </Route>
     );
 }

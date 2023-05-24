@@ -2,6 +2,7 @@ import styles from './image.module.css';
 import { Photo } from '../picsome-types';
 import { PicSomeContext } from '../picsome-context';
 import { useContext, useState } from 'react';
+import { useIsHovered } from '../useIsHovered';
 
 export interface Props {
   index: number;
@@ -21,7 +22,7 @@ function getClass(index: number): string {
 
 export function Image({ index, photo }: Props) {
   const { favourites, toggleFavorite, cart, addToCart, removeFromCart } = useContext(PicSomeContext);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, ref] = useIsHovered();
 
   const isFavourite = favourites.some((fav) => photo.id === fav);
   const isInCart = cart.some((cartPhoto) => photo.id === cartPhoto.id);
@@ -38,8 +39,7 @@ export function Image({ index, photo }: Props) {
   return (
     <div
       className={`${styles.container} ${getClass(index)}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      ref={ref}
     >
       {(isHovered || isFavourite) && (
         <div

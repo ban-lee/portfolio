@@ -36,3 +36,12 @@
 .orderButton:focus {
   outline: none;
 }
+
+.orderButton:disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.message h3 {
+  margin: 24px 0 16px 0;
+}
