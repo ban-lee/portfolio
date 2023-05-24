@@ -11,9 +11,13 @@ interface LoaderData {
 
 export async function loader(): Promise<LoaderData> {
   const res = await fetch(PHOTOS_GET);
-  const data = await res.json();
+  const data = await res.json() as Photo[];
 
-  return {photos: data};
+  // The original data doesn't include a price, so we'll just hard code one.
+  return {photos: data.map((photo, index) => {
+    photo.price = 5.99 + (index % 2);
+    return photo;
+  })};
 }
 
 export function Photos() {

@@ -1,0 +1,38 @@
+.main {
+  margin: 48px auto;
+  max-width: 600px;
+  padding-inline: 16px;
+  text-align: center;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.total {
+  font-size: 24px;
+  text-align: right;
+}
+
+.orderButton {
+  background: var(--dark-blue);
+  color: var(--white);
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.orderButton:hover {
+  transform: translate(1px, 1px);
+}
+
+.orderButton:focus {
+  outline: none;
+}

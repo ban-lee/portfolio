@@ -10,8 +10,11 @@
   flex-direction: column;
 
   --black: #150605;
-  --red: #EA453C;
-  --pink: #F47B6E;
-  --light-blue: #EFFBFE;
-  --blue: #5092cf;
+  --white: #EDF2F4;
+
+  --light-red: #FF6B6B;
+  --red: #FF1F1F;
+  --dark-yellow: #9B7E46;
+  --blue: #5092CF;
+  --dark-blue: #2B2D42;
 }
