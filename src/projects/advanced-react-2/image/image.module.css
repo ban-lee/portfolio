@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+}
+
+.grid {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.favourite,
+.addToCart {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+}
+
+.favourite {
+  color: var(--light-red);
+  left: 8px;
+  top: 8px;
+}
+
+.addToCart {
+  color: var(--blue);
+  right: 8px;
+  top: 8px;
+}

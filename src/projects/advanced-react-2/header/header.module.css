@@ -1,0 +1,25 @@
+.header {
+  background: var(--dark-yellow);
+  box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
+  height: 50px;
+  padding: 0 16px;
+
+  display: flex;
+  place-items: center;
+}
+
+.header a {
+  color: var(--white);
+}
+
+.title {
+  margin-right: auto;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.cart {
+  font-size: 24px;
+}

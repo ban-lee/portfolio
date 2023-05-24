@@ -1,0 +1,20 @@
+.cartItem {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.cartItem img {
+  margin-right: auto;
+}
+
+.cartItemPrice {
+  margin-right: 16px;
+}
+
+.trash {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: -8px;
+  padding: 0 8px;
+}
