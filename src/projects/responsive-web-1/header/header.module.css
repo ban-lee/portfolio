@@ -1,0 +1,84 @@
+.header {
+  background: var(--header-bg);
+  padding: 2em 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 675px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.title h1 {
+  color: var(--deep-blue);
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+}
+
+.title p {
+  color: var(--light-blue);
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+@media (max-width: 675px) {
+  .title {
+    text-align: center;
+  }
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+@media (max-width: 675px) {
+  .nav ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.nav-link {
+  color: var(--nav-links);
+  font-weight: 700;
+  padding: .25em 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--deep-blue);
+}
+
+.active {
+  border-bottom: 1px solid var(--nav-links);
+}
+
+.special {
+  color: var(--hunyadi-yellow);
+  font-family: Inter, sans-serif;
+}
+
+.special:hover,
+.special:focus {
+  color: var(--harvest-gold);
+  font-family: Inter, sans-serif;
+}

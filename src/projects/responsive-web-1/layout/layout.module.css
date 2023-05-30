@@ -1,0 +1,16 @@
+.container {
+  background: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+
+  --black: #150605;
+  --white: #FFFFFF;
+
+  --light-blue: #1792D2;
+  --deep-blue: #143774;
+
+  --header-bg: #F8F8F8;
+  --border-color: #EBEBEB;
+  --nav-links: #717171;
+  --text-color: #707070;
+}
