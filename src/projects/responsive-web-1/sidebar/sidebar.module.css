@@ -1,0 +1,40 @@
+.box {
+  border: 20px solid var(--border-color);
+  color: var(--deep-blue);
+  padding: 1.5em;
+}
+
+.box h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.box h3 {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile p {
+  font-size: 0.75rem;
+}
+
+.recent-posts {
+  margin-top: 2.5em;
+}
+
+.post {
+  border-bottom: 1px solid var(--text-color);
+  padding-block: 1.5em;
+}
+
+.post:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}

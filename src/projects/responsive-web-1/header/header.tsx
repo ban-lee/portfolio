@@ -36,14 +36,6 @@ export function Header() {
                 Recent Posts
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/"
-                className={`${styles['nav-link']} ${styles.special}`}
-              >
-                Back to Ban's Portfolio
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </div>

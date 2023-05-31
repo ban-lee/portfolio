@@ -71,14 +71,3 @@
 .active {
   border-bottom: 1px solid var(--nav-links);
 }
-
-.special {
-  color: var(--hunyadi-yellow);
-  font-family: Inter, sans-serif;
-}
-
-.special:hover,
-.special:focus {
-  color: var(--harvest-gold);
-  font-family: Inter, sans-serif;
-}
