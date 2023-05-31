@@ -41,7 +41,7 @@ export function Header() {
                 to="/"
                 className={`${styles['nav-link']} ${styles.special}`}
               >
-                <i className="bi bi-arrow-left"></i> Portfolio
+                Back to Ban's Portfolio
               </NavLink>
             </li>
           </ul>
