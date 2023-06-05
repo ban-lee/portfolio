@@ -1,0 +1,15 @@
+.title h1 {
+  color: var(--deep-blue);
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.title p {
+  color: var(--light-blue);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

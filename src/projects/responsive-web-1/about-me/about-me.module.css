@@ -1,0 +1,33 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.image {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  color: var(--deep-blue);
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+.subtitle {
+  color: var(--light-blue);
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.6;
+}

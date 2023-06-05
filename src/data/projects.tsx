@@ -63,6 +63,18 @@ export const SCRIMBA: Course[] = [
       },
     ],
   },
+  {
+    id: nanoid(),
+    name: 'Learn Responsive Web Design',
+    description: (<p>How to build responsive web pages.</p>),
+    projects: [
+      {
+        id: nanoid(),
+        name: 'Fake Blog',
+        path: '/simple-blog',
+      },
+    ],
+  },
 ];
 
 export const PERSONAL: Course[] = [
