@@ -1,0 +1,26 @@
+.container {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main {
+  order: 2;
+}
+
+.aside {
+  order: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.aside h2 {
+  order: 2;
+}
+
+.tagline {
+  order: 1;
+}
+
+.info {
+  order: 3;
+}

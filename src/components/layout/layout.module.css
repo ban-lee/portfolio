@@ -47,7 +47,8 @@
 
 .content {
   flex: 1 1 auto;
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
+  margin-block: 2em;
 
   display: flex;
   place-content: center;

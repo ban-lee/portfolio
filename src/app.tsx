@@ -1,6 +1,7 @@
 import { BusinessCard } from './projects/learn-react-1/business-card';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import { Home } from './components/home';
+import { Home as BbqHome } from './projects/responsive-web-2/home';
 import { Layout } from './components/layout';
 import { PicSomeRoutes } from './projects/advanced-react-2/routes';
 import { Quizzical } from './projects/learn-react-3/quizzical/quizzical';
@@ -19,6 +20,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       {PicSomeRoutes()}
     </Route>
     {SimpleBlogRoutes()}
+    <Route path="/bbq" element={<BbqHome title="BBQ Ribs - Ban's Projects" />} />
   </Route>
 ));
 
