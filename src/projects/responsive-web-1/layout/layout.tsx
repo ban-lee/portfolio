@@ -8,14 +8,16 @@ export function Layout() {
   return (
     <div className={styles.body}>
       <Header />
+
       <div className={styles.container}>
         <main className={styles.main}>
           <Outlet />
         </main>
-        <div className={styles.sidebar}>
+        <aside className={styles.sidebar}>
           <Sidebar />
-        </div>
+        </aside>
       </div>
+
       <Footer />
     </div>
   );

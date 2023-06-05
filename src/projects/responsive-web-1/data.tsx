@@ -16,6 +16,7 @@ export const POSTS: Post[] = [
       and make things pop like never before.`,
       imgSrc: decoImg,
       imgAlt: 'A close up of a leafy desk plant. The vase is clear.',
+      imgPosition: 'left',
   },
   {
     id: nanoid(),
@@ -42,10 +43,14 @@ export const POSTS: Post[] = [
     title: 'Finding simplicity in life',
     date: new Date('July 3, 2019'),
     numComments: 5,
-    summary: `Life can get complicated really quickly, but it doesn't have to be! There are many ways to simplify your
-      life, a few of which we've explored in the past. This week we're taking a bit of a approach though, in how you can
-      find simplicity in the life you already living.`,
-      imgSrc: lifeImg,
-      imgAlt: 'A plain white desk with few items on it. A simple wooden clock on the wall.',
+    summary: (
+      <p>
+        <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to
+        simplify your life, <a href="#">a few of which we've explored in the past</a>. This week we're taking a bit of a
+        approach though, in how you can find simplicity in the life you already living.
+      </p>
+    ),
+    imgSrc: lifeImg,
+    imgAlt: 'A plain white desk with few items on it. A simple wooden clock on the wall.',
   },
 ];

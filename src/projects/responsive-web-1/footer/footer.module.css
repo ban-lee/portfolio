@@ -1,7 +1,8 @@
 .footer {
   background: var(--deep-blue);
-  color: var(--white);
-  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
   padding: 3em;
 }
 

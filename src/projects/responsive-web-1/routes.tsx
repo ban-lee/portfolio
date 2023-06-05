@@ -6,10 +6,13 @@ import { Route } from 'react-router-dom';
 
 export function SimpleBlogRoutes() {
   return (
-      <Route path="simple-blog" element={<Layout />}>
+      <Route
+        path="simple-blog"
+        element={<Layout />}
+      >
         <Route
           index
-          element={<Home />}
+          element={<Home title="Fake Blog - Ban's Projects" />}
         />
         <Route path="about" element={<AboutMe />} />
         <Route path="recent" element={<RecentPosts />} />

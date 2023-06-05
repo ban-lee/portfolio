@@ -1,14 +1,12 @@
 import styles from './header.module.css';
+import { Logo } from '../logo';
 import { NavLink } from 'react-router-dom';
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <header>
       <div className={styles.container}>
-        <div className={styles.title}>
-          <h1>Living the simple life</h1>
-          <p>A blog exploring minimalism in life</p>
-        </div>
+        <Logo />
         <nav className={styles.nav}>
           <ul>
             <li>

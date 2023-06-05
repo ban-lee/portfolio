@@ -3,7 +3,8 @@ export interface Post {
   title: string;
   date: Date;
   numComments: number;
-  summary: string;
+  summary: string|React.ReactElement;
   imgSrc: string;
   imgAlt: string;
+  imgPosition?: string;
 }
