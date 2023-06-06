@@ -1,5 +1,7 @@
 import styles from './home.module.css';
 import { Form } from '../form';
+import { InfoBar } from '../infobar';
+import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 
 export function Home({ title }: { title: string }) {
@@ -10,13 +12,9 @@ export function Home({ title }: { title: string }) {
 
   return (
     <div className={styles.container}>
-      <aside className={styles.aside}>
-        <h2>Learn how to make the best BBQ ribs in town</h2>
-        <p className={styles.info}>Join us for this live webinar</p>
-        <p className={styles.tagline}>Mouthwateringly delicious</p>
-      </aside>
+      <InfoBar />
       <main className={styles.main}>
-        <h1>Become a BBQ master!</h1>
+        <h2>Become a BBQ master!</h2>
         <p className={styles.subtitle}>Register Today</p>
         <p className={styles.description}>
           BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One
@@ -24,6 +22,17 @@ export function Home({ title }: { title: string }) {
           webinar!
         </p>
         <Form />
+        <footer className={styles.footer}>
+          <div className={styles.copyright}>
+            <p>A Scrimba course project</p>
+            <p>&#169; 2023</p>
+          </div>
+          <div className={styles['portfolio-link']}>
+            <NavLink to="/">
+              Back to Portfolio
+            </NavLink>
+          </div>
+        </footer>
       </main>
     </div>
   );

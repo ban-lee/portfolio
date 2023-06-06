@@ -2,14 +2,12 @@ import styles from './form.module.css';
 
 export function Form() {
   return (
-    <form>
-      <div>
-        <label htmlFor="name">First Name</label>
-        <input id="name" type="text" />
+    <form className={styles.form}>
+      <div className={styles.name}>
+        <input aria-label="First Name" type="text" placeholder="First Name" />
       </div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" />
+      <div className={styles.email}>
+        <input aria-label="Email" type="text" placeholder="Email" />
       </div>
 
       <button className={styles.registerBtn}>Register</button>
