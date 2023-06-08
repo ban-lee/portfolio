@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.name,
+.email {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.name input,
+.email input {
+  border: 1px solid var(--bbq-dark);
+  border-radius: 4px;
+  font-family: inherit;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.registerBtn {
+  background: var(--bbq-gradient);
+  border: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: transform 250ms;
+  width: 90%;
+}
+
+.registerBtn:hover,
+.registerBtn:focus {
+  transform: scale(1.1);
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}

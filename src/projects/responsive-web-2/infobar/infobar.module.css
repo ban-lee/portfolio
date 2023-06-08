@@ -1,0 +1,73 @@
+.container {
+  background-blend-mode: multiply;
+  background-color: var(--bbq-dark);
+  background-image: url(@/assets/learn-bbq/ribs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  order: 1;
+  padding: 0 0.5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > *  {
+  max-width: 350px;
+}
+
+.container p {
+  color: var(--bbq-orange);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.info {
+  flex: 1 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding-block: 1em;
+}
+
+.subtitle {
+  font-size: 1.3125rem;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+.tagline {
+  border-image: var(--bbq-gradient) 1;
+  border-top: 5px solid #F18119;
+  font-size: 0.625rem;
+  letter-spacing: 2px;
+  order: -1;
+  padding-top: 2px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 60%;
+  }
+
+  .info {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+}

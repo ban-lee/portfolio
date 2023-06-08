@@ -67,11 +67,17 @@ export const SCRIMBA: Course[] = [
     id: nanoid(),
     name: 'Learn Responsive Web Design',
     description: (<p>How to build responsive web pages.</p>),
+    githubUrl: 'https://github.com/ban-lee/portfolio/tree/main/src/projects',
     projects: [
       {
         id: nanoid(),
-        name: 'Fake Blog',
+        name: 'Fake Minimalist Blog',
         path: '/simple-blog',
+      },
+      {
+        id: nanoid(),
+        name: 'Learn BBQ',
+        path: '/bbq',
       },
     ],
   },
