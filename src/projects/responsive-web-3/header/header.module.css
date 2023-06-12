@@ -7,37 +7,112 @@
 
   display: flex;
   align-items: center;
+  gap: 2em;
 }
 
 .logo {
   background: var(--accent-color);
   height: 100%;
   padding: 0 5px;
-  width: max-content;
 
   display: flex;
   align-items: flex-end;
 }
 
-.nav a,
-.nav i {
-  color: var(--white);
+.logo img {
+  max-width: unset;
 }
 
-.nav ul {
-  font-size: var(--button-size);
-  font-weight: 800;
-  list-style-type: none;
-  text-transform: lowercase;
+.nav {
+  position: fixed;
+  background: #000;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms;
+  z-index: 100;
 
   display: flex;
-  gap: 1.5em;
+  flex-direction: column;
 }
 
-.nav li {
-  width: max-content;
+.nav.open {
+  transform: translateX(-100%);
 }
 
-.nav .active {
+.navList {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navLink {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: lowercase;
+  width: 100%;
+}
+
+.navLink.active {
   border-bottom: 2px solid var(--accent-color);
+}
+
+.navLink:hover,
+.navLink:focus {
+    color: #FFE600;
+}
+
+.navBtn {
+  background: transparent;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.navBtn:hover,
+.navBtn:focus {
+  background: #333;
+}
+
+.navOpenBtn {
+  color: var(--white);
+  margin: 0 -0.5rem 0 auto;
+}
+
+.navCloseBtn {
+  color: var(--accent-color);
+  margin: 0.4em 0.7em 0 0;
+
+  align-self: flex-end;
+}
+
+@media (min-width: 750px) {
+  .navOpenBtn,
+  .navCloseBtn {
+    display: none;
+  }
+
+  .nav {
+    position: initial;
+  }
+
+  .navList {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: flex-start;
+  }
+
+  .navLink {
+    font-size: 1.125rem;
+    width: max-content;
+  }
 }

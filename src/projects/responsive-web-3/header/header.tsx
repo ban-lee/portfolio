@@ -1,20 +1,40 @@
 import logoImg from '@/assets/responsive-web-3/logo.png';
 import styles from './header.module.css';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src={logoImg} alt="Fake marketing site logo" />
+        <img
+          src={logoImg}
+          alt="Fake marketing site logo"
+        />
       </div>
-      <nav className={styles.nav}>
-        <ul>
+      <button
+        className={`${styles.navBtn} ${styles.navOpenBtn}`}
+        aria-label="Open navigation"
+        onClick={() => setIsOpen(true)}
+      >
+        <i className="bi bi-list"></i>
+      </button>
+      <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
+        <button
+          className={`${styles.navBtn} ${styles.navCloseBtn}`}
+          aria-label="Close navigation"
+          onClick={() => setIsOpen(false)}
+        >
+          <i className="bi bi-x-lg"></i>
+        </button>
+        <ul className={styles.navList}>
           <li>
             <NavLink
               to="/marketing"
               end
-              className={({isActive}) => `${styles['nav-link']}${isActive ? ` ${styles.active}` : ''}`}
+              className={({isActive}) => `${styles.navLink}${isActive ? ` ${styles.active}` : ''}`}
             >
               Home
             </NavLink>
@@ -22,7 +42,7 @@ export function Header() {
           <li>
             <NavLink
               to="about"
-              className={({isActive}) => `${styles['nav-link']}${isActive ? ` ${styles.active}` : ''}`}
+              className={({isActive}) => `${styles.navLink}${isActive ? ` ${styles.active}` : ''}`}
             >
               About Us
             </NavLink>
@@ -30,13 +50,12 @@ export function Header() {
           <li>
             <NavLink
               to="contact"
-              className={({isActive}) => `${styles['nav-link']}${isActive ? ` ${styles.active}` : ''}`}
+              className={({isActive}) => `${styles.navLink}${isActive ? ` ${styles.active}` : ''}`}
             >
               Contact
             </NavLink>
           </li>
         </ul>
-        {/* <i className="bi bi-list"></i> */}
       </nav>
     </header>
   );
