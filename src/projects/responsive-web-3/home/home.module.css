@@ -1,0 +1,90 @@
+.heroContainer {
+  background: #000;
+}
+
+.hero {
+  background-image: url(@/assets/responsive-web-3/hero-bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--white);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 4em 0;
+
+  display: grid;
+  gap: 2em;
+  grid-template-columns: var(--main-grid-sm);
+  grid-template-areas:
+    ". title ."
+    ". subtext ."
+    ". contact .";
+}
+
+.title {
+  font-size: var(--h1-size);
+  line-height: 1.1;
+
+  grid-area: title;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  font-size: var(--intro-size);
+  line-height: 1.5;
+
+  grid-area: subtext;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.contactBtn {
+  background: var(--accent-color);
+  border-radius: 0;
+  font-size: var(--button-size);
+  font-weight: 700;
+  padding: 0.75em 1.75em;
+  text-transform: lowercase;
+}
+
+.info {
+  padding: 4em 0;
+
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: var(--main-grid-sm);
+}
+
+.info > div {
+  grid-column: 2 / -2;
+}
+
+@media (min-width: 750px) {
+  .hero {
+    padding: 6em 0;
+
+    grid-template-columns: var(--main-grid-lg);
+    grid-template-areas:
+      ". title title . ."
+      ". subtext subtext . ."
+      ". contact contact . .";
+  }
+
+  .info {
+    grid-template-columns: var(--main-grid-lg);
+  }
+
+  .info > div {
+    grid-column: span 1;
+  }
+
+  .info > div:first-of-type {
+    grid-column: 2 / span 1;
+  }
+}

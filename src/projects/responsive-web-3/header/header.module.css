@@ -1,0 +1,43 @@
+.header {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  height: 100%;
+  padding: 0 2em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background: var(--accent-color);
+  height: 100%;
+  padding: 0 5px;
+  width: max-content;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav a,
+.nav i {
+  color: var(--white);
+}
+
+.nav ul {
+  font-size: var(--button-size);
+  font-weight: 800;
+  list-style-type: none;
+  text-transform: lowercase;
+
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav li {
+  width: max-content;
+}
+
+.nav .active {
+  border-bottom: 2px solid var(--accent-color);
+}

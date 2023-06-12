@@ -1,0 +1,32 @@
+.body {
+  background: #FFF;
+  color: var(--font-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100%;
+
+  --h1-size: 2rem;
+  --h2-size: 1.125rem;
+  --intro-size: 1.125rem;
+  --button-size: 0.875rem;
+
+  --main-grid-sm: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+  --main-grid-lg: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+  --max-width: 1000px;
+
+  --black: #000;
+  --white: #FFF;
+  --accent-color: #FFE600;
+  --font-color: #404040;
+  --footer-bg: #EBEBEB;
+}
+
+.header {
+  background: var(--black);
+  height: 75px;
+}
+
+.footer {
+  background: var(--footer-bg);
+}

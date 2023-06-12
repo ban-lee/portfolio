@@ -1,4 +1,4 @@
-header {
+.header {
   background: var(--header-bg);
   padding: 2em 0;
 }
