@@ -1,0 +1,115 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--black);
+  padding: 4em 0;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: var(--main-grid-sm);
+  grid-template-areas:
+    ". social ."
+    ". logo ."
+    ". blurb ."
+    ". copyright ."
+    ". portfolio .";
+
+  justify-items: center;
+}
+
+.social {
+  font-size: 24px;
+  line-height: 24px;
+
+  grid-area: social;
+
+  display: flex;
+  gap: 0.5em;
+}
+
+.social a {
+  color: var(--black);
+  padding: 0.5em;
+}
+
+.social a:hover,
+.social a:focus {
+  opacity: 0.5;
+}
+
+.logo {
+  margin-top: 1.5em;
+  opacity: 0.25;
+
+  grid-area: logo;
+}
+
+.blurb {
+  margin-top: 1.5em;
+  opacity: 0.5;
+
+  grid-area: blurb;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  margin-top: 1.5em;
+  opacity: 0.5;
+
+  grid-area: copyright;
+}
+
+.portfolio-link {
+  font-size: 1rem;
+  grid-area: portfolio;
+  margin-top: 1em;
+}
+
+.portfolio-link a {
+  color: var(--hunyadi-yellow);
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+
+.portfolio-link a:hover,
+.portfolio-link a:focus {
+  color: var(--harvest-gold);
+  font-family: Inter, sans-serif;
+}
+
+@media (min-width: 750px) {
+  .footer {
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+    justify-items: left;
+
+    grid-template-columns: var(--main-grid-lg);
+    grid-template-areas:
+      ". logo logo social ."
+      ". blurb blurb social ."
+      ". copyright copyright . ."
+      ". portfolio portfolio . .";
+  }
+
+  .logo,
+  .blurb,
+  .copyright,
+  .portfolio {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .social {
+    justify-self: end;
+
+    height: fit-content;
+  }
+
+  .blurb {
+    margin-top: 0.5em;
+    max-width: 600px;
+  }
+
+  .copyright {
+    margin-top: 2em;
+  }
+}

@@ -79,6 +79,11 @@ export const SCRIMBA: Course[] = [
         name: 'Learn BBQ',
         path: '/bbq',
       },
+      {
+        id: nanoid(),
+        name: 'Jake&Elwood',
+        path: '/marketing',
+      },
     ],
   },
 ];

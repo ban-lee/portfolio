@@ -1,0 +1,89 @@
+.main {
+  display: grid;
+  grid-template-columns: var(--main-grid-sm);
+  grid-template-areas:
+    ". title ."
+    ". subtitle ."
+    ". aboutImg ."
+    ". content .";
+}
+
+.title {
+  grid-area: title;
+  justify-self: center;
+
+  color: var(--black);
+  font-size: var(--h1-size);
+  font-weight: 800;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.title::after {
+  background: var(--accent-color);
+  content: '';
+  height: 20px;
+  margin-top: -25px;
+  margin-left: 10px;
+  width: 100%;
+
+  display: block;
+}
+
+.subtitle {
+  grid-area: subtitle;
+
+  font-size: var(--intro-size);
+  margin: 0.5em auto 2em;
+  max-width: 600px;
+  text-align: center;
+}
+
+.content {
+  grid-area: content;
+
+  margin-block: 4em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.aboutImg {
+  grid-area: aboutImg;
+
+  box-shadow:
+    5px 5px 0px var(--black),
+    10px 10px 0px var(--accent-color);
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .main {
+    grid-template-columns: var(--main-grid-lg);
+    grid-column-gap: 2em;
+    grid-template-areas:
+      ". title    title    title    ."
+      ". subtitle subtitle subtitle ."
+      ". aboutImg content  content  .";
+  }
+
+  .subtitle {
+    margin-bottom: 3em;
+  }
+
+  .subtitle::after {
+    background: var(--black);
+    content: '';
+    height: 2px;
+    margin: 20px auto 0;
+    width: 100px;
+
+    display: block;
+  }
+
+  .content {
+    margin-top: 0;
+    padding-left: 2em;
+  }
+}

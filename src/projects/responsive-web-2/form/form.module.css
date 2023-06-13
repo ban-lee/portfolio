@@ -20,12 +20,12 @@
   width: 100%;
 }
 
-input {
+.form input {
   transform: scale(1);
   transition: transform 250ms;
 }
 
-input:focus {
+.form input:focus {
   transform: scale(1.1);
 }
 

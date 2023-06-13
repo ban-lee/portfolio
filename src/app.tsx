@@ -3,6 +3,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { Home } from './components/home';
 import { Home as BbqHome } from './projects/responsive-web-2/home';
 import { Layout } from './components/layout';
+import { MarketingRoutes } from './projects/responsive-web-3/routes';
 import { PicSomeRoutes } from './projects/advanced-react-2/routes';
 import { Quizzical } from './projects/learn-react-3/quizzical/quizzical';
 import { SimpleBlogRoutes } from './projects/responsive-web-1/routes';
@@ -21,6 +22,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     </Route>
     {SimpleBlogRoutes()}
     <Route path="/bbq" element={<BbqHome title="BBQ Ribs - Ban's Projects" />} />
+    {MarketingRoutes()}
   </Route>
 ));
 
