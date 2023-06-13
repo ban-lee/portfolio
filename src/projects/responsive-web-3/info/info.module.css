@@ -1,3 +1,22 @@
 .center {
   text-align: center;
 }
+
+.center .title:after {
+  margin-inline: auto;
+}
+
+.title:after {
+  background: var(--accent-color);
+  content: '';
+  height: 3px;
+  margin: 4px 0 12px;
+  width: 60px;
+
+  display: block;
+}
+
+.content a {
+  color: var(--black);
+  text-decoration: underline;
+}

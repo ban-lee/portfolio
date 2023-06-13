@@ -12,17 +12,9 @@ export function Layout({ title }: { title: string }) {
 
   return (
     <div className={styles.body}>
-      <div className={styles.header}>
-        <Header />
-      </div>
-
-      <main>
-        <Outlet />
-      </main>
-
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   );
 }

@@ -1,16 +1,19 @@
 import styles from './info.module.css';
+import { ReactNode } from 'react';
 
 interface Props {
+  children: ReactNode;
   title: string;
-  paragraph: React.ReactElement;
   align: "left"|"center";
 }
 
-export function Info({ title, paragraph, align }: Props) {
+export function Info({ title, align, children }: Props) {
   return (
     <div className={align === 'center' ? styles.center : styles.left}>
       <h3 className={styles.title}>{title}</h3>
-      <p className={styles.paragraph}>{paragraph}</p>
+      <div className={styles.content}>
+        {children}
+      </div>
     </div>
   );
 }
